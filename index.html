@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Rock paper scicors</h1>
+<body background="image1.jpg">
+    <div class="container">
+        <h1 style="color: crimson;">Rock Paper Scissors</h1>
+        <div id="game">
+            <div class="player">
+                <h2 style="color: aqua;">Player 1</h2>
+                <button class="choice" data-choice="rock"><h3 style="color: gold;">Rock</h3></button>
+                <button class="choice" data-choice="paper"><h3 style="color: lime;">Paper</h3></button>
+                <button class="choice" data-choice="scissors"><h3 style="color: magenta;">Scissors</h3></button>
+            </div>
+            <div class="player">
+                <h2 style="color: #0dd8cea8;">Player 2</h2>
+                <button class="choice" data-choice="rock"><h3 style="color: gold;">Rock</h3></button>
+                <button class="choice" data-choice="paper"><h3 style="color: lime;">Paper</h3></button>
+                <button class="choice" data-choice="scissors"><h3 style="color: magenta;">Scissors</h3></button>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+        <div id="score">
+            <h2>Score</h2>
+            <p style="font-size: larger;color: #e71111;">Player 1: <span id="player1Score">0</span></p>
+            <p style="font-size: large;color: #e71111;">Player 2: <span id="player2Score">0</span></p>
+        </div>
+        <button id="reset">Reset Game</button>
+        <div id="loader" class="loader hidden"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
